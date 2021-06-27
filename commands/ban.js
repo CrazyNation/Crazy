@@ -9,8 +9,6 @@ module.exports = {
                 const memberTarger = message.guild.members.cache.get(member.id);
                 memberTarger.ban();
                 message.channel.send("User has been banned");
-                const setting = await serverSettings.findOne({ serverID: message.guild.id }) 
-                message.guild.channels.cache.get(`${setting.modLog}`).send(new MessageEmbed().setDescription(`${memberTarger} was banned by <@${message.author.id}>`))
             }else{
                 message.channel.send('You couldnt ban that member because no member was mentioned');
             }
