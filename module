@@ -1,0 +1,7 @@
+module.exports = {
+    name: [""],
+    alisases: [""],
+    exucute(client, message, args, cmd, Discord){
+        
+    }
+}
